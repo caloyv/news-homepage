@@ -21,34 +21,50 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
 
-  <!-- IMPORTANT!!!!
+  <!-- 
+    IMPORTANT!!!!
       Dont open the index.js if you dont want to get spoiled on the javascript
-    
+      
   -->
   <body>
-
     <header>
       <div class="header-wrapper">
         <div class="logo-container">
           <img src="./assets/images/logo.svg" alt="Logo" />
         </div>
-        <div >
+        <div class="hidden">
           <img class="menu-btn" src="./assets/images/icon-menu.svg" alt="" />
         </div>
-      </div>
-      <div class="mobile-menu"> 
-        <nav>
-          <div class="close-container">
-            <img class="close-btn" src="./assets/images/icon-menu-close.svg" alt="">
-          </div>
-          <ul>
-            <li>Home</li>
-            <li>New</li>
-            <li>Popular</li>
-            <li>Trending</li>
-            <li>Categories</li>
-          </ul>
-        </nav>
+        <div class="mobile-menu hidden">
+          <nav>
+            <div class="close-container h">
+              <img
+                class="close-btn"
+                src="./assets/images/icon-menu-close.svg"
+                alt=""
+              />
+            </div>
+            <ul>
+              <li>Home</li>
+              <li>New</li>
+              <li>Popular</li>
+              <li>Trending</li>
+              <li>Categories</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="desktop-menu">
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>New</li>
+              <li>Popular</li>
+              <li>Trending</li>
+              <li>Categories</li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -62,12 +78,12 @@
           <div>
             <p>
               We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is it
-              really fulfilling its promise?
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
             </p>
             <button>READ MORE</button>
           </div>
-      </div>
+        </div>
       </section>
       <section class="hero-2">
         <div class="wrapper">
@@ -78,18 +94,24 @@
           </div>
           <div class="wrapper-desc">
             <h4>The Downsides of AI Artistry</h4>
-            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
           </div>
           <div class="wrapper-desc">
             <h4>Is VC Funding Drying Up?</h4>
-            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
           </div>
         </div>
       </section>
       <section class="hero-3">
         <div class="tech">
           <div class="tech-img-container">
-            <img src="./assets/images/image-retro-pcs.jpg" alt="">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" />
           </div>
           <div class="tech-desc">
             <h2>01</h2>
@@ -99,7 +121,7 @@
         </div>
         <div class="tech">
           <div class="tech-img-container">
-            <img src="./assets/images/image-top-laptops.jpg" alt="">
+            <img src="./assets/images/image-top-laptops.jpg" alt="" />
           </div>
           <div class="tech-desc">
             <h2>02</h2>
@@ -109,7 +131,7 @@
         </div>
         <div class="tech">
           <div class="tech-img-container">
-            <img src="./assets/images/image-gaming-growth.jpg" alt="">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="" />
           </div>
           <div class="tech-desc">
             <h2>03</h2>
