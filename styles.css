@@ -101,7 +101,7 @@ header {
 .bg-gray.active {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, .4) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 /* MAIN */
@@ -221,10 +221,66 @@ header {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.web-container img:nth-child(2) {
+  display: none;
+}
 /* DESKTOP VIEW HERE */
-
+.desktop-menu {
+  display: none;
+}
 @media (min-width: 768px) {
   body {
-    
+    padding: 9vh;
+  }
+
+main {
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ 
+
+}
+.hero {
+ grid-column: span 2;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column
+
+}
+.hero-1-dice  {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.hero-1-dice h1 {
+  width: 100%;
+  font-size: 50px;
+line-height: 50px;
+
+}
+
+.hero-1-dice div {
+  width: 100%;
+
+}
+.hero-3 {
+flex-direction: row;
+grid-column: span 3;
+}
+
+
+  .desktop-menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  .web-container img:nth-child(1) {
+    display: none;
+  }
+
+  .web-container img:nth-child(2) {
+    display: block;
+
   }
 }
